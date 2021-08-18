@@ -1,0 +1,55 @@
+.btn-eft {
+    background-color: #F48224;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 0 !important;
+    border: none;
+    transition:all 0.3s ease 0s;
+}
+.btn-eft:hover,
+.btn-eft.active:hover{
+    color: #ffffff;
+}
+.btn-eft:before{
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background-color:#2E0014;
+    width: 30%;
+    height: 4px;
+    transition:all 0.3s ease 0s;
+}
+.btn-eft:after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    background-color:#2E0014;
+    width: 30%;
+    height: 4px;
+    transition:all 0.3s ease 0s;
+}
+.btn-eft:hover:before,
+.btn-eft:hover:after,
+.btn-eft.active:before,
+.btn-eft.active:after{
+    width: 100%;
+}
+
+@media screen and (max-width: 575px){
+    .btn-eft{
+        margin-bottom: 50px !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body { background: #333; color: white; }
+}
+
+@media (prefers-color-scheme: light) {
+    body { background: #ddd; color: black; }
+}
