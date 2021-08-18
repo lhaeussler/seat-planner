@@ -1,24 +1,43 @@
+/*//Head*/
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*//lgn button*/
 .btn-eft {
-    background-color: #F48224;
-    color: #fff;
+    background-color: #ffffff;
+    color: #333333;
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
+    right: 30px;
+    top: 30px;
     border-radius: 0 !important;
     border: none;
     transition:all 0.3s ease 0s;
+    width: 200px;
+    transform: skew(-21deg);
+    }
+.btn > span {
+    display: inline-block;
+    transform: skew(21deg);
+}
+.btn-eft:hover{
+    background-color: #ffffff;
+
 }
 .btn-eft:hover,
 .btn-eft.active:hover{
-    color: #ffffff;
+    color: #333333;
 }
 .btn-eft:before{
     content: "";
     position: absolute;
     top: -7px;
     left: 0;
-    background-color:#2E0014;
+    background-color: #ffffff;
     width: 30%;
     height: 4px;
     transition:all 0.3s ease 0s;
@@ -28,7 +47,7 @@
     position: absolute;
     bottom: -7px;
     right: 0;
-    background-color:#2E0014;
+    background-color: #F48224;
     width: 30%;
     height: 4px;
     transition:all 0.3s ease 0s;
@@ -51,5 +70,11 @@
 }
 
 @media (prefers-color-scheme: light) {
-    body { background: #ddd; color: black; }
+    body { background: #ddd; color: white; }
+}
+/*//head modal login*/
+
+.head_mdl{
+    border-radius: 0px;
+    color: #333333!important;
 }

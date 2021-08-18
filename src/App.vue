@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <headmenu></headmenu>
+    <planner></planner>
   </div>
 </template>
 
 <script>
 import Headmenu from "./components/headmenu";
+import Planner from "./components/planner";
 
 export default {
   name: 'App',
   components: {
-    Headmenu
+    Headmenu,
+    Planner
   }
 }
 </script>
