@@ -7,7 +7,7 @@ type Counter {
   "Number of increments"
   count: Int!
   "Full message for testing"
-  countStr: String
+  countStr: Stringsymfony check:requirements
 }
 
 "A text message send by users"

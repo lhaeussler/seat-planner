@@ -1,8 +1,0 @@
-query {
-    seats{
-        id
-        name
-        avialable
-        occupant
-    }
-}

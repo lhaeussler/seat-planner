@@ -1603,8 +1603,6 @@ m121 -41 c52 -51 13 -147 -60 -147 -69 0 -111 93 -64 144 39 44 80 45 124 3z"/>
             <b-list-group-item>Aktuell Belegt: <span :style="reservationState">{{isReserved}}</span></b-list-group-item>
             <b-list-group-item>//Barcode</b-list-group-item>
           </b-list-group>
-          <br>
-          <FullCalendar :options="calendarOptions"/>
         </div>
       </b-sidebar>
     </div>
@@ -1612,22 +1610,13 @@ m121 -41 c52 -51 13 -147 -60 -147 -69 0 -111 93 -64 144 39 44 80 45 124 3z"/>
 </template>
 
 <script>
-import '@fullcalendar/core/vdom' // solves problem with Vite
-import FullCalendar from '@fullcalendar/vue'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import interactionPlugin from '@fullcalendar/interaction'
 
 export default {
   components: {
-    FullCalendar // make the <FullCalendar> tag available
   },
   name: "planner",
   data() {
     return {
-      calendarOptions: {
-        plugins: [ dayGridPlugin, interactionPlugin ],
-        initialView: 'dayGridMonth'
-      },
       frei: 'Frei',
       belegt: 'Belegt',
       variant: 'dark',
